@@ -122,10 +122,121 @@ background-color:rgba(30,144,255,0.6);
   content:"";
 }
 
-.hero-link-text {
+/* LAtest Videos */
 
+.latest-videos {
+  width: 100%;
+  max-width: 600;
+  padding: 54px;
+}
+.latest-videos-heading {
+  margin-top:0;
+  margin-bottom: 24;
+  font-family: "Bebas Neue","Open Sans Condensed","Arial",sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.latest-videos-divider {
+  height: 1px;
+  border: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color:#999;
+}
+.latest-videos-list{
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.latest-videos-item:not(last-child) {
+  margin-bottom: 10px;
+}
+
+/* Item latest videos */
+
+.item-latest-videos {
+display: flex;
+}
+.item-latest-videos-img {
+width: 160px;
+height: auto;
+border-radius: 4px;
+object-fit: cover;
 
 }
+.item-latest-videos-info {
+  padding: 16px;
+}
+.item-latest-videos-heading {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-family: "Bebas Neue","Open Sans Condensed","Arial",sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+
+.item-latest-videos-link {
+  color:#222;
+  text-decoration: none;
+}
+
+.item-latest-videos-link:hover{
+  color:#1e90ff;
+}
+.item-latest-videos-link:active{
+  opacity: 0.6;
+}
+
+.item-latest-videos-meta{
+  display: flex;
+  align-items:center;
+  color:#888;
+  font-size: 14px;
+  line-height: normal;
+}
+.item-latest-video-published-at{
+  display: flex;
+  align-items:center;
+  margin-right: 24px;
+}
+
+.item-latest-video-published-at::before{
+width: 16px;
+height: 16px;
+margin-right: 4px;
+background-image:url("../img/icon-clock.svg");
+background-repeat:no-repeat;
+background-position:center center;
+background-size:contain;
+content:"";
+}
+
+
+.item-latest-videos-views {
+  display: flex;
+  align-items:center;
+}
+
+.item-latest-videos-views::before{
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url("../img/icon-visibilty.svg");
+background-repeat:no-repeat;
+background-position:center center;
+background-size:contain;
+content:"";
+}
+
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
